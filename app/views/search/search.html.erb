@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+
+    <% if @products %>
+
+      <h3>検索結果<small> (<%= @products.count %>件)</small></h3>
+      <%= render 'products/products',products: @products %>
+
+    <% else %>
+
+      <h1 class="center">検索結果はありません</h1>
+
+    <% end %>
+
+  </div>
+</div>
